@@ -41,7 +41,7 @@ for( Object x : h.keySet())
 
 //Counting the specified character as specified
 
-System.out.println("Enter the chatacter to count from the string");
+System.out.println("Enter the character to count from the string");
 
 char a = s.next().charAt(0);
 
