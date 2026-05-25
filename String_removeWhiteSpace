@@ -1,0 +1,34 @@
+package String_Problems;
+
+import java.util.Scanner;
+
+public class String_removeWhiteSpace {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Provide the text:");
+		String s = sc.nextLine();
+		
+		StringBuilder sb = new StringBuilder();
+		
+		for(int i=0;i<s.length();i++)
+		{
+			char ch = s.charAt(i);
+			
+			if(!Character.isWhitespace(ch))
+			{
+				sb=sb.append(ch);
+			}
+			
+		
+			
+		}
+		System.out.println("Filtered Text: "+sb);
+		//UsingReplaceAll
+		s=s.replaceAll("\\s+","");
+		System.out.println("Final Text: "+s);
+
+	}
+
+}
